@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#FAE0EEF4"
+	tools:context=".MainActivity">
+
+	<TextView
+		android:id="@+id/textView"
+		android:layout_width="348dp"
+		android:layout_height="88dp"
+		android:layout_marginBottom="20dp"
+		android:gravity="center_horizontal"
+		android:text="@string/app_name"
+		android:textAlignment="center"
+		android:textSize="38sp"
+		android:textColor="@color/black"
+		app:layout_constraintBottom_toTopOf="@+id/textView2"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.492"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.914" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="188dp"
+		android:layout_height="50dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginBottom="8dp"
+		android:text="@string/et_localselect"
+		android:textColor="@color/black"
+		android:textSize="28sp"
+		app:layout_constraintBottom_toTopOf="@+id/weathername"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<TextView
+		android:id="@+id/weathername"
+		android:layout_width="190dp"
+		android:layout_height="69dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginBottom="24dp"
+		android:text="@string/et_limit"
+		android:textSize="22sp"
+		android:textColor="@color/black"
+		app:layout_constraintBottom_toTopOf="@+id/editText1"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<Button
+		android:id="@+id/button4"
+		android:layout_width="193dp"
+		android:layout_height="111dp"
+		android:layout_marginEnd="4dp"
+		android:layout_marginRight="4dp"
+		android:layout_marginBottom="48dp"
+		android:text="@string/bt_search"
+		android:textSize="34sp"
+		app:layout_constraintBottom_toTopOf="@+id/editText1"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<EditText
+		android:id="@+id/editText1"
+		android:layout_width="416dp"
+		android:layout_height="57dp"
+		android:layout_marginStart="1dp"
+		android:layout_marginLeft="1dp"
+		android:layout_marginBottom="1dp"
+		android:autofillHints=""
+		android:background="@color/white"
+		android:hint="@string/place_1"
+		android:inputType="text"
+		app:layout_constraintBottom_toTopOf="@+id/editText2"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<EditText
+		android:id="@+id/editText2"
+		android:layout_width="416dp"
+		android:layout_height="57dp"
+		android:layout_marginStart="1dp"
+		android:layout_marginLeft="1dp"
+		android:layout_marginBottom="1dp"
+		android:autofillHints=""
+		android:background="@color/white"
+		android:hint="@string/place_2"
+		android:inputType="text"
+		app:layout_constraintBottom_toTopOf="@+id/editText3"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<EditText
+		android:id="@+id/editText3"
+		android:layout_width="416dp"
+		android:layout_height="57dp"
+		android:layout_marginStart="1dp"
+		android:layout_marginLeft="1dp"
+		android:layout_marginBottom="1dp"
+		android:autofillHints=""
+		android:background="@color/white"
+		android:hint="@string/place_3"
+		android:inputType="text"
+		app:layout_constraintBottom_toTopOf="@+id/editText4"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<EditText
+		android:id="@+id/editText4"
+		android:layout_width="416dp"
+		android:layout_height="57dp"
+		android:layout_marginStart="1dp"
+		android:layout_marginLeft="1dp"
+		android:layout_marginBottom="1dp"
+		android:autofillHints=""
+		android:background="@color/white"
+		android:hint="@string/place_4"
+		android:inputType="text"
+		app:layout_constraintBottom_toTopOf="@+id/editText5"
+		app:layout_constraintStart_toStartOf="parent" />
+
+	<EditText
+		android:id="@+id/editText5"
+		android:layout_width="416dp"
+		android:layout_height="57dp"
+		android:layout_marginStart="1dp"
+		android:layout_marginLeft="1dp"
+		android:layout_marginBottom="100dp"
+		android:autofillHints=""
+		android:background="@color/white"
+		android:hint="@string/place_5"
+		android:inputType="text"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

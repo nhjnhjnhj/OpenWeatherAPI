@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAE0EEF4">
+
+    <Button
+        android:id="@+id/VGM"
+        android:layout_width="294dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="4dp"
+        android:text="@string/googlemaps"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/cityName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/target_city"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="@string/CW"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/target_latitude"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/cityName"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:text="TextView"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/latitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/target_city" />
+
+    <TextView
+        android:id="@+id/target_latitude"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="@string/LaW"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/target_longitude"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/latitude"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:text="TextView"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/longitude"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toEndOf="@+id/target_latitude" />
+
+    <TextView
+        android:id="@+id/target_longitude"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/LoW"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/see_restaurant"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/longitude"
+        android:layout_width="210dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/see_restaurant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.684"
+        app:layout_constraintStart_toEndOf="@+id/target_longitude" />
+
+    <Button
+        android:id="@+id/see_restaurant"
+        android:layout_width="249dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/restaurants"
+        app:layout_constraintBottom_toTopOf="@+id/see_amusement"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/see_amusement"
+        android:layout_width="249dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="44dp"
+        android:text="@string/amusements"
+        app:layout_constraintBottom_toTopOf="@+id/see_historicmonument"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/see_historicmonument"
+        android:layout_width="249dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="104dp"
+        android:text="@string/historicmonuments"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
